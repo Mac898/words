@@ -1,0 +1,25 @@
+<h2 style="text-align: center;"><strong>MagmaShack Presents</strong></h2>
+<h1 style="text-align: center;"><em><strong>Word Collector</strong></em></h1>
+<h3 style="text-align: center;"><em><strong>For Skribbl and other games</strong></em></h3>
+<hr />
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+    function empty() {
+    var x;
+    x = document.getElementById("wtsa").value;
+        if (x == "") {
+            alert("Enter a Valid Word");
+            return false;
+        };
+    }
+</script>
+<center>
+    <form method="POST">
+        <label for="submission_value">Word to submit: </label>
+        <input id="submission_value" name="wts" id="wtsa" type="text" required/>
+        <input id="submission_submit" name="submit" type="submit" value="Submit Word" onClick="return empty()"/>
+    </form>
+</center>
+<h1 style="text-align: center;"><em><strong>{{ complete_text }}</strong></em></h1>

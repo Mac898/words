@@ -1,0 +1,19 @@
+<h2 style="text-align: center;"><strong>MagmaShack Presents</strong></h2>
+<h1 style="text-align: center;"><em><strong>Word Collector</strong></em></h1>
+<h3 style="text-align: center;"><em><strong>Admin Panel</strong></em></h3>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+<center>
+    <form method="POST">
+        <input id="submission_submit" name="CloseCollection" type="submit" value="Close Collection"/>
+        <input id="submission_submit" name="OpenCollection" type="submit" value="Open Collection"/>
+        <input id="submission_submit" name="PrintList" type="submit" value="Print List"/>
+        <input id="submission_submit" name="ResetList" type="submit" value="Reset List"/>
+    </form>
+</center>
+<h1 style="text-align: center;"><em><strong>{{ complete_text }}</strong></em></h1>
+<h3 style="text-align: center;"><em><strong>Web Easy Copy</strong></em></h3>
+<h3 style="text-align: center;">{{ printed_list }}</h3>
